@@ -1,0 +1,62 @@
+# Hash Table Implementation (RISC-V Assembly)
+
+## Overview
+
+This project implements a hash table in RISC-V assembly language, supporting basic operations such as insertion, lookup, and deletion, both with and without collision handling. The code is structured for educational purposes and includes a comprehensive test suite.
+
+## Problem Summary
+
+The goal is to design and implement a hash table that can:
+- Insert key-value pairs.
+- Find values by key.
+- Delete key-value pairs.
+- Handle collisions using linked-list chaining.
+
+The hash table uses a custom hash function and supports string keys. The implementation is tested using a set of automated test cases.
+
+## Assumptions
+
+- The hash table is implemented in RISC-V assembly and is intended to be run in the [RARS](https://github.com/TheThirdOne/rars) simulator.
+- All keys are null-terminated ASCII strings.
+- The test harness and playgrounds are provided to verify correctness.
+- No dynamic memory allocation beyond the provided buffer is used.
+
+## How to Run
+
+To run the main test suite, use the following command in the project directory:
+
+```
+rars nc common.s hashtable.s
+```
+
+To run the playground (for interactive testing and visualization):
+
+```
+rars nc common_playground.s playground.s hashtable.s
+```
+
+To run the playground with collision handling:
+
+```
+rars nc common_playground_col.s playground_col.s hashtable.s
+```
+
+## File Descriptions
+
+- **[common.s](common.s)**  
+  Test harness and utility functions for running and displaying test cases, including array management and output formatting.
+
+- **[hashtable.s](hashtable.s)**  
+  Implements the hash table logic: hash function, string equality, insert, find, delete, and their collision-handling variants.
+
+- **[playground.s](playground.s)**  
+  Example and template for testing hash table operations without collision handling. Used with `common_playground.s`.
+
+- **[playground_col.s](playground_col.s)**  
+  Example and template for testing hash table operations with collision handling. Used with `common_playground_col.s`.
+
+- **[common_playground.s](common_playground.s)**  
+  Sets up the environment and runs the playground for non-collision hash table operations.
+
+- **[common_playground_col.s](common_playground_col.s)**  
+  Sets up the environment and runs the playground for collision-handling hash table operations.

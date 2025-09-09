@@ -1,0 +1,36 @@
+=================================================
+=  CMPUT 229 - Department of Computing Science 	=
+=	  	University of Alberta		=
+=						=
+=     Test cases for Lab 5: String Interning	=
+= 						=
+=  						=
+=================================================
+
+TEST CASE 5: File interning. 
+
+INPUT:
+1. Choose intern a file ('f').
+2. Intern "test_file_01"
+3. Record the identifier numbers for file #1.
+4. Choose retrieve a string ('g').
+5. Use the first identifier provided in the list. 
+6. Repeat steps 4-5 for all identifiers. 
+7. Quit. 
+
+OUTPUT: (Showing only relevant output)
+String:Le 
+String:francais
+String:est
+String:une
+String:langue
+String:vraiment
+String:merveilleuse. 
+String:Je
+String:voudrais
+String:bien
+String:le
+String:parler
+String:!
+
+Note: The identifier must be different for all strings. 

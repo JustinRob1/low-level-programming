@@ -1,0 +1,28 @@
+=================================================
+=  CMPUT 229 - Department of Computing Science 	=
+=	  	University of Alberta		=
+=						=
+=     Test cases for Lab 5: String Interning	=
+= 						=
+=  						=
+=================================================
+
+TEST CASE 4: Testing for collisions and matching strings. 
+
+INPUT:
+1. Choose intern a string ('i').
+2. Intern "a".  
+3. Record the identifier number for string #1.
+4. Choose intern a string ('i').
+5. Intern "b".
+6. Choose retrieve a string ('g').
+7. Use identifier #2. 
+8. Choose retrieve a string ('g').
+9. Use identifier #1. 
+10. Quit. 
+
+OUTPUT: (Showing only relevant output)
+String:b
+String:a
+
+Note: The identifier must be different for both strings. 

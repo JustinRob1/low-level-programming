@@ -1,0 +1,29 @@
+=================================================
+=  CMPUT 229 - Department of Computing Science 	=
+=	  	University of Alberta		=
+=						=
+=     Test cases for Lab 5: String Interning	=
+= 						=
+=  						=
+=================================================
+
+TEST CASE 3: Testing for collisions and matching strings. 
+
+INPUT:
+1. Choose intern a string ('i').
+2. Intern "CMPUT 229 is the absolute bomb!"
+3. Record the identifier number for string #1.
+4. Choose intern a string ('i').
+5. Intern "CMPUT 229 is the absolute bomb!"
+6. Record the identifier number for string #2.
+7. Choose retrieve a string ('g').
+8. Use identifier #2. 
+9. Choose retrieve a string ('g').
+10. Use identifier #1. 
+11. Quit. 
+
+OUTPUT: (Showing only relevant output)
+String:CMPUT 229 is the absolute bomb!
+String:CMPUT 229 is the absolute bomb!
+
+Note: The identifier must be the same for both strings. 

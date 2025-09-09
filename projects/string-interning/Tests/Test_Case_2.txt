@@ -1,0 +1,33 @@
+=================================================
+=  CMPUT 229 - Department of Computing Science 	=
+=	  	University of Alberta		=
+=						=
+=     Test cases for Lab 5: String Interning	=
+= 						=
+=  						=
+=================================================
+
+TEST CASE 2: Testing for collision free and match-free strings. 
+
+INPUT:
+1. Choose intern a string ('i').
+2. Intern "CMPUT 229 is the absolute bomb!"
+3. Record the identifier number for string #1.
+4. Choose intern a string ('i').
+5. Intern "CMPUT 229."
+6. Record the identifier number for string #2.
+7. Choose intern a string ('i').
+8. Intern "CMPUT 229: the best course ever."
+9. Record the identifier number for string #3.
+10. Choose retrieve a string ('g').
+11. Use identifier #3. 
+12. Choose retrieve a string ('g').
+13. Use identifier #2. 
+14. Choose retrieve a string ('g').
+15. Use identifier #1. 
+16. Quit. 
+
+OUTPUT: (Showing only relevant output)
+String:CMPUT 229: the best course ever!
+String:CMPUT 229.
+String:CMPUT 229 is the absolute bomb!
