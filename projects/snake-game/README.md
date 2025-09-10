@@ -12,6 +12,9 @@ The objective is to create an interactive Snake game where:
 - The game supports three difficulty levels, each with different starting times and bonus times for eating apples.
 - The display and input are handled via the RARS Keyboard and Display MMIO Simulator.
 
+## Screenshot
+![Snake Game Screenshot](screenshot.png)
+
 ## Assumptions
 
 - The program is run in the [RARS](https://github.com/TheThirdOne/rars) simulator.
